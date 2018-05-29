@@ -1,0 +1,309 @@
+ /* ------------------ */
+/* ----FONTS LOAD---- */
+/* ------------------ */
+
+@font-face {
+font-family: 'Avenir Next LT Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Regular'), url('../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Avenir Next LT Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Bold'), url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Avenir Next LT Pro Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Italic'), url('../fonts/AvenirNextLTPro-It.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Ultra Light Condensed'), url('../fonts/AvenirNextLTPro-UltLtCn.woff') format('woff');
+}
+
+/* ----------------- */
+/* ------GLOBAL----- */
+/* ----------------- */
+body{
+    background:#fbfbfb;
+    font-family: "Avenir Next LT Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1{
+  text-transform: uppercase;
+  font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.btn{
+  border:0;
+  background:#FFF;
+  text-transform: uppercase;
+  font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  color:#333;
+  padding:10px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.btn:hover{
+  background:#088df6;
+  color:#FFF;
+}
+
+/* ----------------- */
+/* -------NAV------- */
+/* ----------------- */
+nav {
+    background:#272a2f;
+    height:55px;
+    line-height: 55px;
+}
+nav .logo{
+  float:left;
+  margin-right:40px;
+}
+nav .logo img{
+  width: 65px;
+  margin-top:5px;
+}
+nav ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+nav ul>li{
+  float:left;
+  margin-right:20px;
+}
+nav li.active{
+  box-shadow: 0px -3px 0px #088df6 inset;
+}
+nav a{
+  color:#FFF;
+
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+nav a:hover{
+  color:#088df6;
+    text-decoration: none;
+}
+nav .search-bar{float:right;}
+nav .form-search{
+
+      margin-top: 10px;
+  height: 36px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: none;
+}
+nav .nav-btn{
+  float:right;
+  margin-left:20px;
+}
+nav .login-btn{
+  width:55px;
+  height:55px;
+  background:#088df6;
+  color:white;
+  text-align:center;
+  font-size:24px;
+  line-height: 55px;
+  padding-top: 3px;
+}
+nav .add-btn{
+  width:55px;
+  height:55px;
+  background:#2ecc4f;
+}
+/* ----------------- */
+/* ------HEADER----- */
+/* ----------------- */
+
+header{
+  min-height:500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  color:#FFF;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+header .background {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+}
+header .overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(to top right,#088df6,#2ecc4f);
+}
+header h1{
+  margin:0;
+}
+header .content{
+  max-width: calc(100% / 2);
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  text-align: justify center;
+  text-transform: uppercase;
+}
+header .btn-header{
+  margin-top:20px;
+}
+
+
+.separator{
+    height: 2px;
+    background: #FFF;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.btn-primary:hover{
+    background: white;
+    color:#000;
+}
+footer{
+    font-size: 1.1rem;
+    padding: 5px 0;
+    background: #088df6;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+/*creer*/
+#creer{
+    padding: 0;
+}
+.ajoutHistoire, .ajoutImg{
+    text-align: left;
+    padding: 30px;
+    background: white;
+}
+.ajoutHistoire input[type=text], .ajoutHistoire textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+}
+.ajoutHistoire input.ajoutImg input{
+    text-align: center;
+}
+.ajoutHistoire .divAddBtn{
+    text-align: left;
+}
+.ajoutHistoire #titreHistoire{
+    text-transform: uppercase;
+    font-family: "Avenir Next LT Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+}
+.envoyerHistoire input{
+    width: auto;
+}
+.envoyerHistoire{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.divAddBtn{
+    display: inline-block;
+    text-align: left;
+}
+.divAdd{
+    position: relative;
+}
+.addImg{
+    border-radius: 50%;
+    background: #088df6;
+    margin-left: 15px;
+    color:white;
+}
+#descriptionHistoire{
+    margin-bottom: 20px;
+}
+.envoyerHistoire{
+background: #088df6;
+color:white;
+}
+.ajoutImg{
+    margin-top: 20px;
+}
+.ajoutImg  textarea{
+    display: block;
+    width: 90%;
+    height: 100px;
+    max-width: 90%;
+}
+#creer h2{
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.divArrow{
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-size: 3rem;
+}
+.vertical-center{
+    display: flex;
+}
+.arrow{
+    align-self: center;
+}
+.fa-arrow-up{
+    margin-bottom: 30px;
+}
+#creer .fa{
+    transition: all 300ms;
+}
+#creer .fa:hover{
+    cursor: pointer;
+    color: #088df6;
+}

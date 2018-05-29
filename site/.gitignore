@@ -1,0 +1,12 @@
+.idea
+.vscode
+# Framework specific
+vendor/
+composer.lock
+
+# The developers Playground
+works
+
+# DB config
+app/Config/Database.php
+app/Storage/Logs/error.log
